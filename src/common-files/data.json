@@ -1,0 +1,18 @@
+{
+"modalDAta":[  
+    {
+       "id":1,
+         "header": "Are u sure want to add it to the cart?",
+         "text": "Press YES to proceed"
+
+
+    },  
+   {
+         "id":2,
+         "header": "DELETE",
+         "text": "Modal 2 text"
+
+    }
+       
+]
+}

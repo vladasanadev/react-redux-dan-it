@@ -1,0 +1,126 @@
+[
+    {
+        "name": "Ноутбук Acer Aspire 5 A515-56G-54JD (NX.A1LEU.00A)",
+        "price": "19999",
+        "image": "1.jpg",
+        "code": "1",
+        "color": [
+            "grey",
+            "black"
+        ],
+        "stars": "3",
+        "active": false
+    },
+    {
+        "name": "Ноутбук Asus ROG Strix G15 G512LI-HN058 (90NR0381-M01630)",
+        "price": "26 999",
+        "image": "2.jpg",
+        "code": "2",
+        "color": [
+            "black"
+        ],
+        "stars": "4",
+        "active": false
+    },
+    {
+        "name": "Ноутбук Apple MacBook Air 13 M1 256GB 2020 (MGND3)",
+        "price": "33 999",
+        "image": "1.jpg",
+        "code": "3",
+        "color": [
+            "grey",
+            "black",
+            "gold"
+        ],
+        "stars": "2",
+        "active": false
+    },
+    {
+        "name": "Ноутбук Asus Laptop X515MA-BR150 (90NB0TH1-M04320)",
+        "price": "12 999",
+        "image": "1.jpg",
+        "code": " 4",
+        "color": [
+            "black"
+        ],
+        "stars": "5",
+        "active": false
+    },
+    {
+        "name": "Ноутбук Lenovo V145-15 (81MT002CRA)",
+        "price": "8 999",
+        "image": "1.jpg",
+        "code": "5",
+        "color": [
+            "black"
+        ],
+        "stars": "4",
+        "active": false
+    },
+    {
+        "name": "Ноутбук HP Pavilion Gaming 15-ec1055ur (1U6F8EA)",
+        "price": "27 777",
+        "image": "1.jpg",
+        "code": "6",
+        "color": [
+            "darkgrey"
+        ],
+        "stars": "4",
+        "active": false
+    },
+    {
+        "name": "Ноутбук Asus ROG Strix G15 G512LI-HN279 (90NR0381-M06870)",
+        "price": "30999",
+        "image": "1.jpg",
+        "code": "7",
+        "color": [
+            "grey"
+        ],
+        "stars": "5",
+        "active": false
+    },
+    {
+        "name": "Ноутбук HP Spectre x360 Convertible 13-aw0031ur (1S7G8EA)",
+        "price": "34 999",
+        "image": "1.jpg",
+        "code": "8",
+        "color": [
+            "silver"
+        ],
+        "stars": "6",
+        "active": false
+    },
+    {
+        "name": "Ноутбук Acer Swift 3 SF314-42-R7TJ",
+        "price": "20 999",
+        "image": "1.jpg",
+        "code": "9",
+        "color": [
+            "pure silver"
+        ],
+        "stars": "3",
+        "active": false
+    },
+    {
+        "name": "Ноутбук Acer Predator Helios 300 PH315-53-59HQ",
+        "price": "40 999",
+        "image": "1.jpg",
+        "code": "10",
+        "color": [
+            "black"
+        ],
+        "stars": "1",
+        "active": false
+    },
+    {
+        "name": "Ноутбук HP Envy Laptop 15-ep0016ur",
+        "price": "65999",
+        "image": "1.jpg",
+        "code": "11",
+        "color": [
+            "silver"
+        ],
+        "stars": "1",
+        "active": false
+    }
+]
