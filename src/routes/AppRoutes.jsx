@@ -36,6 +36,7 @@ const AppRoutes = ({
           favourites={favourites}
           setCartItems={setCartItems}
           dispatch={dispatch}
+          handler={handler}
         />
       </Route>
       <Route path={"/Favourites"} exact>

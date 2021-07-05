@@ -19,16 +19,8 @@ function App({
   favourites,
   show,
   cartItems,
+  laptopToRemove,
 }) {
-  //ACTION JUST FOR TEST PURPOSE CREATING HERE -SHOULD BE IN OTHER PLACE!
-  const actionIncrement = {
-    type: "INCR",
-    payload: "",
-  };
-  const actionDecrement = {
-    type: "DCR",
-  };
-
   const [isFavourite, setisFavourite] = useState(false);
 
   const favouriteItemsList = [];
@@ -44,11 +36,18 @@ function App({
     dispatch({ type: "SET_SHOW", payload: !show });
     // setShow(!show);
     dispatch({ type: "SET_MODAL_INFO", payload: modalInfo });
+    // removeFromCart(modalInfo);
     // setModalInfo(modalInfo);
   };
   const showModal = () => {
     dispatch({ type: "SET_SHOW", payload: !show });
     // setShow(!show);
+  };
+
+  //remove from cart logic
+  const removeFromCart = () => {
+    dispatch({ type: "REMOVE_CART_ITEM", payload: laptopToRemove });
+    // setCartItems(cartItems.filter((el) => el !== laptopInfo));
   };
 
   //creatin dataID for modals
@@ -58,9 +57,6 @@ function App({
   };
   return (
     <div className="App">
-      <button onClick={() => dispatch(actionIncrement)}>+</button>
-      <button onClick={() => dispatch(actionDecrement)}>-</button>
-      {counterValue}
       <Header />
       <AppRoutes
         dispatch={dispatch}
@@ -81,7 +77,7 @@ function App({
             <Button
               text={"YES"}
               backgroundColor={"#b53726"}
-              modalHandler={showModal}
+              modalHandler={removeFromCart}
             />,
             <Button text={"NO"} backgroundColor={"#b53726"} />,
           ]}
@@ -113,6 +109,7 @@ const mapStateToProps = (store) => {
     favourites: store.favourites,
     show: store.show,
     cartItems: store.cartItems,
+    laptopToRemove: store.laptopToRemove,
   };
 };
 

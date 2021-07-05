@@ -12,18 +12,20 @@ const imagesPath = {
   starEmpty: empty,
   starFull: full,
 };
-function Card({ dispatch, laptopInfo, isCardShown, cartItems, favourites }) {
+function Card({
+  dispatch,
+  laptopInfo,
+  isCardShown,
+  cartItems,
+  favourites,
+  modalHandler,
+}) {
   const addToCartHandler = (laptopInfo) => {
     console.log("pressed cart");
     // setCartItems([...cartItems, laptopInfo]);
     dispatch({ type: "SET_CART_ITEM", payload: laptopInfo });
     console.log(cartItems);
     localStorage.setItem("cartItem", JSON.stringify(cartItems));
-  };
-
-  const removeFromCart = (laptopInfo) => {
-    dispatch({ type: "REMOVE_CART_ITEM", payload: laptopInfo });
-    // setCartItems(cartItems.filter((el) => el !== laptopInfo));
   };
 
   //star function logic
@@ -119,7 +121,15 @@ function Card({ dispatch, laptopInfo, isCardShown, cartItems, favourites }) {
         <div className="card__info">
           <h1>Name: {laptopInfo.name}</h1>
           <p>Price:{laptopInfo.price}</p>
-          <img onClick={() => removeFromCart(laptopInfo)} src={trash} />
+          <img
+            onClick={() => {
+              console.log("CLICKED DELETE");
+              modalHandler(1);
+              dispatch({ type: "SET_REMOVE_LAPTOP", payload: laptopInfo });
+            }}
+            src={trash}
+            alt="s"
+          />
         </div>
       </div>
     );

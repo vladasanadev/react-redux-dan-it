@@ -8,22 +8,16 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 
 const initialStore = {
-  counter: 0,
   modalInfo: {},
   favourites: [],
   productData: [],
   show: false,
   cartItems: [],
+  laptopToRemove: {},
 };
 
 const reducer = (store = initialStore, action) => {
   switch (action.type) {
-    case "INCR":
-      return { ...store, counter: ++store.counter };
-
-    case "DCR":
-      return { ...store, counter: --store.counter };
-
     case "SET_MODAL_INFO":
       return { ...store, modalInfo: action.payload };
     case "SET_FAV":
@@ -52,6 +46,11 @@ const reducer = (store = initialStore, action) => {
       return {
         ...store,
         cartItems: store.cartItems.filter((el) => el !== action.payload),
+      };
+    case "SET_REMOVE_LAPTOP":
+      return {
+        ...store,
+        laptopToRemove: action.payload,
       };
 
     default:

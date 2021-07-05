@@ -9,6 +9,7 @@ const Cart = ({
   favourites,
   favouriteItem,
   isCardShown,
+  handler,
 }) => {
   return (
     <div>
@@ -20,9 +21,7 @@ const Cart = ({
         isCardShown={isCardShown}
         favourites={favourites}
         favouriteItem={favouriteItem}
-        handler={() => {
-          // updateModal(dataID.buttonOne)
-        }}
+        handler={handler}
       />
     </div>
   );
